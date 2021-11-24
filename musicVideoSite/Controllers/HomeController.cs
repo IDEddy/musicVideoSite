@@ -33,7 +33,8 @@ namespace musicVideoSite.Controllers
             List<MusicModel> music = new List<MusicModel>
             {
                 new MusicModel { MusicNo=1, MusicName="Sergio Valentino - Drive Forever", Genre="pop" },
-                new MusicModel { MusicNo=2, MusicName="Sergio Valentino - Drive Forever",  Genre="test" }
+                new MusicModel { MusicNo=2, MusicName="Sergio Valentino - Drive Forever",  Genre="test" },
+                 new MusicModel { MusicNo=2, MusicName="Miyagi & Эндшпиль feat. Рем Дигга - I Got Love",  Genre="Hip hop" }
             };
 
             ViewData.Model = music;

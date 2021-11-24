@@ -6077,11 +6077,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edgar\\source\\repos\\musicVideoSite\\musicVideoSite\\musicVideoSite.csproj",
+      "projectUniqueName": "C:\\Users\\Edgar\\Documents\\GitHub\\musicVideo\\musicVideoSite\\musicVideoSite.csproj",
       "projectName": "musicVideoSite",
-      "projectPath": "C:\\Users\\Edgar\\source\\repos\\musicVideoSite\\musicVideoSite\\musicVideoSite.csproj",
+      "projectPath": "C:\\Users\\Edgar\\Documents\\GitHub\\musicVideo\\musicVideoSite\\musicVideoSite.csproj",
       "packagesPath": "C:\\Users\\Edgar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edgar\\source\\repos\\musicVideoSite\\musicVideoSite\\obj\\",
+      "outputPath": "C:\\Users\\Edgar\\Documents\\GitHub\\musicVideo\\musicVideoSite\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

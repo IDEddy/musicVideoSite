@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eZulPGOeJzZ9f3kEVlOtdc7VRp5GAwjap4wafI/Mqs2S/Q1th1py/xMe/73Auy3H1VI16aIx2vepqkaxMe58PA==",
+  "dgSpecHash": "4u1kRidsiom8DhDiSIurEUOZF/WsQ456ScyAjHCer/fDIDT1yLJUIgXT7wYTSEuAvinvEfxhbL2LFuMkW8kCBQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Edgar\\source\\repos\\musicVideoSite\\musicVideoSite\\musicVideoSite.csproj",
+  "projectFilePath": "C:\\Users\\Edgar\\Documents\\GitHub\\musicVideo\\musicVideoSite\\musicVideoSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Edgar\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Edgar\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
