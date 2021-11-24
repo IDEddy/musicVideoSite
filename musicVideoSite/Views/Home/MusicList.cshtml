@@ -1,13 +1,47 @@
-﻿@{
-    ViewData["Title"] = "Music List";
+﻿@model IEnumerable<MusicModel>
+
+@{
+    ViewData["Title"] = "MusicList";
 }
-<h1>@ViewData["Title"]</h1>
 
-<p>Use this page to detail your site's Music List</p>
+<h1>MusicList</h1>
 
-
-<body>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/PvYGJ4NHFXI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  
-</body>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MusicNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MusicName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Genre)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MusicNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MusicName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Genre)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

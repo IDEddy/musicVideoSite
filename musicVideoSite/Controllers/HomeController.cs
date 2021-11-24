@@ -27,13 +27,25 @@ namespace musicVideoSite.Controllers
         {
             return View();
         }
-
         public IActionResult MusicList()
         {
+
+            List<MusicModel> music = new List<MusicModel>
+            {
+                new MusicModel { MusicNo=1, MusicName="Sergio Valentino - Drive Forever", Genre="pop" },
+                new MusicModel { MusicNo=2, MusicName="Sergio Valentino - Drive Forever",  Genre="test" }
+            };
+
+            ViewData.Model = music;
+
             return View();
+
+
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    
+
+    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
