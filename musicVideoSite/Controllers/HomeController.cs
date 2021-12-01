@@ -13,6 +13,13 @@ namespace musicVideoSite.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+         public static List<MusicModel> music = new List<MusicModel>
+          {
+                new MusicModel { MusicNo=1, MusicName="Sergio Valentino - Drive Forever", Genre="pop" },
+                new MusicModel { MusicNo=2, MusicName="Miyagi & Эндшпиль feat. Рем Дигга - I Got Love",  Genre="Hip hop" },
+                new MusicModel { MusicNo=3, MusicName="Wagakki Band - 焔 (Homura) + 暁ノ糸 (Akatsuki no Ito) / 1st JAPAN Tour 2015 Hibiya Yagai Ongakudo",  Genre="Metal" }
+          };
+
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -27,26 +34,26 @@ namespace musicVideoSite.Controllers
         {
             return View();
         }
+
         public IActionResult MusicList()
         {
 
-            List<MusicModel> music = new List<MusicModel>
-            {
-                new MusicModel { MusicNo=1, MusicName="Sergio Valentino - Drive Forever", Genre="pop" },
-                new MusicModel { MusicNo=2, MusicName="Sergio Valentino - Drive Forever",  Genre="test" },
-                 new MusicModel { MusicNo=2, MusicName="Miyagi & Эндшпиль feat. Рем Дигга - I Got Love",  Genre="Hip hop" }
-            };
 
             ViewData.Model = music;
 
-            return View();
+            return View(music);
 
 
         }
 
-    
+        [HttpGet]
+        public ActionResult Details(int id)
+        { 
+            var model = Get
+        }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
