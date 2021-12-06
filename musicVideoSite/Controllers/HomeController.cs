@@ -48,8 +48,9 @@ namespace musicVideoSite.Controllers
 
         [HttpGet]
         public ActionResult Details(int id)
-        { 
-            var model = Get
+        {
+
+            return View();
         }
 
 

@@ -2,9 +2,32 @@
 
 @{
     ViewData["Title"] = "MusicList";
+
+
+
+    <style type="text/css">
+        body {
+            background-color: black;
+            margin: 0;
+        }
+
+        th, td {
+            color: white;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
 }
 
-<h1>MusicList</h1>
+<h1>Music List</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
@@ -25,24 +48,25 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.MusicNo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MusicName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Genre)
-            </td>
-            <td>
-                @Html.ActionLink("Play", "Play", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MusicNo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MusicName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Genre)
+                </td>
+                <td>
+                    @Html.ActionLink("Play", "Play", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
