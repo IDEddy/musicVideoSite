@@ -59,10 +59,10 @@ html {
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  background-color: black;
-
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: black;
+   
 }
 .footer {
     bottom: 0;
