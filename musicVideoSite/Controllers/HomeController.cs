@@ -46,6 +46,16 @@ namespace musicVideoSite.Controllers
 
         }
 
+        public IActionResult Featured()
+        {
+
+
+            
+            return View();
+
+
+        }
+
         [HttpGet]
         public ActionResult Details(int id)
         {

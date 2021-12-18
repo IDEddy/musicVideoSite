@@ -223,3 +223,4 @@ C:\Users\Edgar\Documents\GitHub\musicVideo\musicVideoSite\obj\Debug\netcoreapp3.
 C:\Users\Edgar\Documents\GitHub\musicVideo\musicVideoSite\obj\Debug\netcoreapp3.1\musicVideoSite.genruntimeconfig.cache
 C:\Users\Edgar\Documents\GitHub\musicVideo\musicVideoSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Play.cshtml.g.cs
 C:\Users\Edgar\Documents\GitHub\musicVideo\musicVideoSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\MusicList.cshtml.g.cs
+C:\Users\Edgar\Documents\GitHub\musicVideo\musicVideoSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Featured.cshtml.g.cs
