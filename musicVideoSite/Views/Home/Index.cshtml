@@ -1,78 +1,151 @@
-﻿<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+﻿@{
+    ViewData["Title"] = "Home";
 
-        body {
-            margin: 0;
-            font-family: Arial;
-            font-size: 17px;
-        }
 
-        #myVideo {
-            position: fixed;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-        }
-
-        .content {
-            position: fixed;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            color: #f1f1f1;
-            width: 100%;
-            padding: 20px;
-        }
-
-        #myBtn {
-            width: 200px;
-            font-size: 18px;
-            padding: 10px;
-            border: none;
-            background: #000;
-            color: #fff;
-            cursor: pointer;
-        }
-
-            #myBtn:hover {
-                background: #ddd;
-                color: black;
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+    
+            
+            iframe {
+                padding: 1%;
             }
-    </style>
-</head>
-<body>
 
-    <video autoplay muted loop id="myVideo">
-        <source src="rain.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
-
-    <div class="content">
-        <h1>Heading</h1>
-        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
-        <button id="myBtn" onclick="myFunction()">Pause</button>
-    </div>
-
-    <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-
-        function myFunction() {
-            if (video.paused) {
-                video.play();
-                btn.innerHTML = "Pause";
-            } else {
-                video.pause();
-                btn.innerHTML = "Play";
+            .container-fluid {
+            padding-left: 10%;
+            padding-right:10%;
             }
-        }
-    </script>
 
-</body>
+            body {
+                color: #ffffff;
+                background-image: linear-gradient(black, white);
+            }
+           
+
+        </style>
+    </head>
+    <body>
+
+
+        <div class="text-center">
+            <h1 class="display-4">Music video site Home page</h1>
+            <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">Welcome to music site featured list</a>.</p>
+
+            <h1> Home Page</h1>
+
+        </div>
+
+
+  
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-6">
+                    <a href="https://www.youtube.com/embed/7kuCncWEx-4" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/7kuCncWEx-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+                <div class="col-xs-6">
+                    <a href="https://www.youtube.com/embed/fNL1PVHORuQ" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/fNL1PVHORuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+                </div>
+                <div class="col-xs-6">
+                    <a href="https://www.youtube.com/embed/p1-mvDVWj7Q" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/p1-mvDVWj7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+                <div class="col-xs-6">
+                    <a href="https://www.youtube.com/embed/qPBTp7wTiWE?list=PLHOciPo-RQU6vzMAqyMpM3Na1q15Xq6YP" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/qPBTp7wTiWE?list=PLHOciPo-RQU6vzMAqyMpM3Na1q15Xq6YP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="https://www.youtube.com/embed/YKdXVnaHfo8?list=PLzCxunOM5WFLNCSF0UEHZqFJJlmdeL71S" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/YKdXVnaHfo8?list=PLzCxunOM5WFLNCSF0UEHZqFJJlmdeL71S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+                <div class="col-xs-4">
+                    <a href="https://www.youtube.com/embed/O-W7BEwrTvI" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/O-W7BEwrTvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="https://www.youtube.com/embed/qBZ_2j_a_1g" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/qBZ_2j_a_1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+                <div class="col-xs-4">
+                    <a href="https://www.youtube.com/embed/kuBP0-0bwwE?list=PLHOciPo-RQU6vzMAqyMpM3Na1q15Xq6YP" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/kuBP0-0bwwE?list=PLHOciPo-RQU6vzMAqyMpM3Na1q15Xq6YP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="https://www.youtube.com/embed/Ssvu2yncgWU" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/Ssvu2yncgWU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+                <div class="col-xs-4">
+                    <a href="https://www.youtube.com/embed/Abz3VO1iKyc?list=PLHOciPo-RQU6vzMAqyMpM3Na1q15Xq6YP" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/Abz3VO1iKyc?list=PLHOciPo-RQU6vzMAqyMpM3Na1q15Xq6YP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="https://www.youtube.com/embed/lbj7XmsbMpI?list=PLHOciPo-RQU6vzMAqyMpM3Na1q15Xq6YP" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/lbj7XmsbMpI?list=PLHOciPo-RQU6vzMAqyMpM3Na1q15Xq6YP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+                <div class="col-xs-4">
+                    <a href="https://www.youtube.com/embed/Ssvu2yncgWU" class="thumbnail">
+                        <iframe width="300" height="200" src="https://www.youtube.com/embed/5hTaTrJowJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </a>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <video autoplay muted loop id="myVideo">
+            <source src="rain.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+
+
+        <script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+
+            function myFunction() {
+                if (video.paused) {
+                    video.play();
+                    btn.innerHTML = "Pause";
+                } else {
+                    video.pause();
+                    btn.innerHTML = "Play";
+                }
+            }
+        </script>
+
+    </body>
 </html>
+    }
